@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NavBar from './src/pages/navbar/NavBar.js'
+import { NavBar } from './src/pages/navbar/NavBar.js';
 
 class ProfilePage extends React.Component {
   render() {
     return (
       <div>
-				<NavBar />
+		<NavBar />
         <h1>All About Me!</h1>
         <p>I like movies and blah blah blah blah blah</p>
         <img src="https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-monkeyselfie.jpg" 
@@ -16,7 +16,10 @@ class ProfilePage extends React.Component {
   }
 }
 
+export default ProfilePage;
+
 ReactDOM.render(
     <ProfilePage />,
     document.getElementById('App')
 )
+
