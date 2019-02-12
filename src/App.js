@@ -1,31 +1,56 @@
-import React, { Component } from "react";
-import { ProfilePage } from "../Profile/ProfilePage";
-import { NavBar } from "../Navbar/NavBar";
-import "./App.css";
+import React, { Component } from 'react';
+import './App.css';
+import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import Main from './components/main';
+import { Link } from 'react-router-dom';
+
+
 
 class App extends Component {
-    render() {
-        return ( <
-            div className = "App" >
+  render() {
+    return (
+      <div style={{height: '400px', position: 'center'}}>
+      
+    <Layout style={{background: 'url(../background2.jpg) center / cover'}}>     
+        <Header transparent title={<Link to="/">
+                
+                </Link>} style={{margin: '10px', color: 'black'}}
+          > 
+          <a href="/" rel="logo" ><img alt="logo" src="RuLogo.png" height="100px" width="250px" /></a>
 
-            <
-            div className = "Profile" >
-            <
-            ProfilePage / >
-            <
-            /div>
+        </Header>
+        <Drawer className="tab" title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Rusilah's Portfolio</Link>}>
+            <Navigation style={{fontSize:'22px'}}>
+              <Link to="/aboutme">About Me</Link>
+              <Link to="/resume">Resume</Link>
+              <Link to="/projects">Projects</Link>
+              <Link to="/blog">Blog</Link>
+              <Link to="/contact">Contact</Link>
 
-            <
-            div className = "NavBar" >
-            <
-            NavBar / >
-            <
-            /div>
+              <br />
+              {/* LinkedIn */}
+            <div>You can find me at</div>
+            <a href="https://www.linkedin.com/in/rusilah-gojali/" rel="noopener noreferrer" target="_blank">
+            <i class="fab fa-linkedin" aria-hidden="true" />
+            </a>
+  
+            {/* Github */}
+            <a href="https://github.com/rgojali" rel="noopener noreferrer" target="_blank" >
+              <i className="fab fa-github-square" aria-hidden="true" />
+             
+            </a>
+  
+            </Navigation>
+        </Drawer>
+        <Content>
+            <div className="page-content" />
+            <Main/>
+        </Content>
+    </Layout>
+</div>
 
-            <
-            /div>
-        );
-    }
+    );
+  }
 }
 
 export default App;
