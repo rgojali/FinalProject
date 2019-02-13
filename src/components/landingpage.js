@@ -17,10 +17,10 @@ class Landing extends Component {
               <div className="banner-text" >
                
                 <h2>Looking for a Full Stack Web Developer?</h2>
-                <h3>Look no more. I'm a Seattle-based developer.</h3>
+                <h3>Look no more. I'm a Seattle-based developer ready to deploy.</h3>
               <hr/>
               <br />
-            <p><i class="fab fa-html5"></i>  <i class="fab fa-css3-alt"></i>  <i class="fab fa-js"></i>  <i class="fab fa-react"></i>  <img src="gatsby.svg" alt="gatsbylogo" height="85px" width="85px" />  <i class="fab fa-node"></i></p>
+            <p><i class="fab fa-html5"></i>  <i class="fab fa-css3-alt"></i>  <i class="fab fa-js"></i>  <i class="fab fa-react"></i>  <img src="gatsby.svg" alt="gatsbylogo" height="40px" width="40px" />  <i class="fab fa-node"></i></p>
   
   
           <div className="social-links">

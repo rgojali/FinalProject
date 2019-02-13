@@ -19,13 +19,13 @@ class Resume extends Component {
             </div>
             <div
               className="resume-left-col"
-              style={{ margin: "25px", background: "white", opacity: ".6", textAlign:"center", fontFamily:"'Times New Roman', Times, serif"}}
+              style={{ margin: "25px", padding: "25px", background: "white", opacity: ".6", textAlign:"center", fontFamily:"'Times New Roman', Times, serif", fontSize:"25px"}}
             >
               <h2 style={{ paddingTop: "1em",  }}>Rusilah Gojali</h2>
-              <h4 style={{ color: "grey" }}>Web Developer</h4>
+              <h4 style={{ color: "black" }}>Web Developer</h4>
               <hr style={{ borderTop: "3px solid #833fb2", width: "100%"}} />
               <p>
-              Motivated  developer who takes a project and delivers hard-working results. Looking for an opportunity to utilize skillset and evolve by constantly learning and understanding the world of tech.
+              Motivated  developer who takes a project and delivers hard-working results. Looking for an opportunity to utilize skills and evolve by constantly learning and understanding the world of coding.
               </p>
               <hr style={{ borderTop: "3px solid #833fb2", width: "100%" }} />
 

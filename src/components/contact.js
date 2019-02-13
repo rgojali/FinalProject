@@ -6,7 +6,7 @@ class Contact extends Component {
   render() {
     return(
       
-        <div class="container" style={{margin: "100px", position:"static", width:"700px"}}>
+        <div class="container" style={{margin: "50px", position:"static", width:"700px", height:"700px"}}>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"></link>
           <h2>Contact Me</h2>
             <hr/>
@@ -24,6 +24,7 @@ class Contact extends Component {
           <textarea id="subject" name="subject" placeholder="Write something.." style={{height:"200px"}}></textarea>
 
           <input type="submit" value="Submit" style={{fontSize:"20px"}}/>
+          
         </form>
         <br />
         <br />

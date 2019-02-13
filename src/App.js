@@ -9,14 +9,14 @@ import { Link } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      <div style={{height: '400px', position: 'center'}}>
+      <div style={{ position:'center'}}>
       
     <Layout style={{background: 'url(../background2.jpg) center / cover'}}>     
         <Header transparent title={<Link to="/">
                 
                 </Link>} style={{margin: '10px', color: 'black'}}
           > 
-          <a href="/" rel="logo" ><img alt="logo" src="RuLogo.png" height="100px" width="250px" /></a>
+          <a href="/" rel="logo" ><img alt="logo" src="lula.png" height="70px" width="170px" /></a>
 
         </Header>
         <Drawer className="tab" title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Rusilah's Portfolio</Link>}>
@@ -29,7 +29,7 @@ class App extends Component {
 
               <br />
               {/* LinkedIn */}
-            <div>You can find me at</div>
+          
             <a href="https://www.linkedin.com/in/rusilah-gojali/" rel="noopener noreferrer" target="_blank">
             <i class="fab fa-linkedin" aria-hidden="true" />
             </a>
